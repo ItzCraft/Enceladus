@@ -1,0 +1,20 @@
+type: Router
+name: Ice Router
+description: Distributes items in three directions.
+size: 1
+speed: 13
+health: 35
+itemCapacity: 3
+requirements: [
+  ice/4
+]
+category: distribution
+research: ice-conveyor
+researchCost: [
+  ice/80
+]
+details: "-Router!
+         -Router
+         -Router Router Router?
+         -Router, Router Router Router
+         -Router!?"

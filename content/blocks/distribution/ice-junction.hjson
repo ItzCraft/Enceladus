@@ -1,0 +1,15 @@
+type: Junction
+name: Ice Juction
+description: Junction.
+health: 35
+size: 1
+speed: 13
+requirements: [
+  ice/2
+]
+squareSprite: false
+category: distribution
+research: ice-router
+researchCost: [
+ ice/40
+ ]
