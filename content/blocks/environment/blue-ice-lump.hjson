@@ -1,0 +1,7 @@
+type: TallBlock
+name: Blue Ice Lump
+variants: 3
+clipSize: 32
+shadowAlpha: 0
+shadowOffset: 0
+customShadow: true

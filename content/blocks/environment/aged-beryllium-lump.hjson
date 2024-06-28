@@ -1,0 +1,7 @@
+type: TallBlock
+name: Beryllium Lump
+variants: 4
+clipSize: 32
+shadowAlpha: 0
+shadowOffset: 0
+customShadow: true
