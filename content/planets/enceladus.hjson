@@ -1,0 +1,129 @@
+generator: {
+  octaves: 4
+  persistence: 0.4
+  scale: 20
+  mag: 0.6
+  thresh: 1
+  min: 100
+  max: 100
+  radMin: 265
+  radMax: 550
+  blue-ice-wallChance: 0.4
+  white-ice-wallChance: 0.5
+  aged-beryllium-wallChance: 0.2
+  dulite-wallChance: 0.34
+}
+localizedName: Enceladus
+description: A cold icy moon of the planet Saturn. Poor conditions for survival. The main resource is probably ice.
+alwaysUnlocked: true
+sectorSize: 1
+startSector: 0
+orbitSpacing: 1
+radius: 0.7
+minZoom: 1
+drawOrbit: true
+atmosphereRadIn: 0
+atmosphereRadOut: 0.16
+accessible: true
+updateLighting: false
+sectorSeed: 1053
+bloom: false
+visible: true
+atmosphereColor: e0f7fa
+iconColor: e0f7fa
+hasAtmosphere: true
+defaultCore: core
+parent: sun
+allowLaunchSchematics: true
+allowLaunchToNumbered: true
+allowLaunchLoadout: false
+allowSectorInvasion: true
+allowWaveSimulation: true
+clearSectorOnLose: true
+allowWaves: true
+prebuildBase: true
+mesh: [
+ {
+    // ice
+    type: NoiseMesh
+    planet: enceladus
+    divisions: 6
+    seed: 20
+    radius: 0.714
+    color1: 82bdd1
+    color2: aad5e3
+    octaves: 4
+    persistence: 0.7
+  }
+  {
+    // snow
+    type: NoiseMesh
+    planet: enceladus
+    divisions: 5
+    radius: 0.72
+    seed: 45
+    color1: dedede
+    color2: ebebeb
+    octaves: 5.5
+    persistence: 1.1
+    scale: 0.55
+    mag: 0.7
+  }
+  {
+    // blue
+    type: NoiseMesh
+    planet: enceladus
+    divisions: 5
+    seed: 32
+    radius: 0.7145
+    color1: 082d69
+    color2: 2d518c
+    octaves: 5.6
+    persistence: 0.85
+  }
+  {
+    // gray
+    type: NoiseMesh
+    planet: enceladus
+    divisions: 5
+    seed: 228
+    radius: 0.716
+    color1: 737373
+    color2: 3b3c3d
+    octaves: 6
+    persistence: 1
+  }
+  {
+    // Green
+    type: NoiseMesh
+    planet: enceladus
+    divisions: 5
+    seed: 47
+    radius: 0.718
+    color1: 79c947
+    color2: 2d632c
+    octaves: 6.2
+    persistence: 1
+  }
+]
+hiddenItems: [
+    "copper"
+    "lead"
+    "scrap"
+    "graphite"
+    "coal"
+    "thorium"
+    "plastanium"
+    "phase-fabric"
+    "surge-alloy"
+    "spore-pod"
+    "sand"
+    "blast-compound"
+    "pyratite"
+    "metaglass"
+    "oxide"
+    "tungsten"
+    "carbide"
+    "fissile-matter"
+    "dormant-cyst"
+] 
