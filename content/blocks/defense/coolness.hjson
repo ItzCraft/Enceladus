@@ -1,0 +1,78 @@
+type: ItemTurret
+name: Coolness
+description: -
+health: 130
+size: 1
+category: turret
+research: {
+  parent: core
+  requirements: [
+    ice/60
+  ]
+}
+shootSound: artillery
+requirements: [
+  ice/25
+]
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.1
+}
+targetAir: false
+targetGround: true
+reload: 40
+range: 180
+velocityRnd: 0.12
+inaccuracy: 1
+liquidCapacity: 10
+burstSpacing: 5
+shoot: {
+  shots: 3
+  shotDelay: 5
+}
+ammoTypes: {
+  ice: {
+    type: BasicBulletType
+    width: 14
+    height: 16
+    speed: 9
+    lifetime: 65
+    damage: 4
+    ammoMultiplier: 2
+  }
+  lithium: {
+    type: BasicBulletType
+    width: 14
+    height: 16
+    speed: 7
+    lifetime: 65
+    damage: 11
+}
+}
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+        type: RegionPart
+        suffix: -right
+        mirror: false
+        under: false
+        outline: false
+        y: -1.5
+        x: 2.175
+        moveX: 1.1
+    }
+    {
+        type: RegionPart
+        suffix: -left
+        mirror: false
+        under: false
+        outline: false
+        y: -1.5
+        x: -2.175
+        moveX: -1.1
+    }
+  ]
+} 
